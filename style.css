@@ -1,9 +1,181 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1024px;
+  min-width: 600px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  padding: 32px; 
+  background-color: #e6e2d4;
 }
 
-h1 {
-    text-align: center;
+.cv {
+  max-width: 1024px;
+  margin: auto;
+  border: 1px solid black;
+  display: flex;
+  box-shadow: 1px 81px 100px 5px rgba(0,0,0,0.49);
 }
+
+.header {
+  margin-bottom: 20px;
+}
+
+.photo {
+  width: 100%;
+  margin: 0;
+}
+
+.photo img {
+  width: 100%;
+  box-shadow: 5px 6px 32px 1px rgba(0,0,0,0.49);
+}
+
+.contact-list {
+  display: flex;
+  list-style-type: none; 
+  padding: 0; 
+}
+
+.contact-list li {
+  display: flex; 
+  align-items: center;
+  margin-right: 20px; 
+}
+
+.contact-list li img {
+  width: 20px;
+  height: auto;
+  margin-right: 5px; 
+}
+
+.contact-list li a {
+  text-decoration: none;
+  color: black; 
+}
+
+
+.about {
+  padding: 16px;
+  width: 35%;
+  color: white;
+  background-color: #4d4d4d;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.contacts__text {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.skills_list {
+  margin-bottom: 35px;
+}
+
+.skills_list li + li {
+  margin-top: 20px;
+}
+
+.underlined {
+  width: 100%;
+  height: 1px; 
+  margin-top: 8px; 
+  margin-bottom: 16px; 
+  background-color: white;
+}
+
+.underlined-grey {
+  width: 100%;
+  height: 1px; 
+  margin-top: 8px; 
+  background-color: grey;
+  margin-bottom: 10px;
+}
+
+.about-me {
+  padding: 10px;
+  width: 75%;
+  color: #4d4d4d;
+  background-color: white;
+}
+
+.works ul li + li {
+  margin-top: 11.2px; 
+}
+
+.works ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.description {
+  padding: 10px;
+  display: flex;
+  font-size: 15px;
+  line-height: 1.5;
+  border-top: solid grey 1px;
+}
+
+.description__item1 {
+  width: 35%;
+}
+
+.description__item2 {
+  padding-left: 10px;
+  width: 75%;
+}
+
+.EXAMPLES {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.EXAMPLES h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.code-block {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  overflow-x: auto;
+}
+
+.code-block code {
+  font-family: 'Courier New', Courier, monospace;
+  display: block;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .EXAMPLES {
+      padding: 10px;
+  }
+  .code-block {
+      padding: 10px;
+  }
+}
+
+.git-link img {
+  width: 100px;
+  height: 50px;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
