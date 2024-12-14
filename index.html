@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="cv">
+        <section class="about me">
+            <header class="header">
+                <div class="photo">
+                    <img src="./images/my-photo.jpg" alt="Developer Pavel Balaba">
+                </div>
+            </header>
+            <article class="contacts">
+                <h3 class="contacts__text">MY CONTACTS</h3>
+                <div class="underlined"></div>
+                <ul class="contact-list">
+                    <li class="Discord">
+                        <img src="./images/discord.png" alt="Discord logo">
+                        <a href="https://discord.com/channels/@me"><div>Discord</div></a>
+                    </li>
+                    <li class="Email">
+                        <img src="./images/email.png" alt="Email logo">
+                        <a href="mailto:pavel_balaba05@mail.ru"><div>Email</div></a>
+                    </li>
+                    <li class="Linkedin">
+                        <img src="./images/linkedin-app-icon-the-world-s-largest-professional-network-social-networking-jobs-and-careers_277909-476.avif" alt="LinkedIn logo">
+                        <a href="https://www.linkedin.com/in/pavel-balaba-ba32b62a4/"><div>LinkedIn</div></a>
+                    </li>
+                </ul>
+            </article>
+            
+            <article class="skills">
+                <h3 class="contacts__text">My skills:</h3>
+                <div class="underlined"></div>
+                <ul class="skills_list">
+                    <li>English: B1</li>
+                    <li>HTML5</li>
+                    <li>CSS3, SASS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Angular</li>
+                    <li>Git</li>
+                    <li>OOP</li>
+                    <li>Figma</li>
+                </ul>
+                <div id="work-examples">
+                    <h3 class="contacts__text">work examples</h3>
+                    <div class="underlined"></div>
+                    <nav class="works">
+                        <ul>
+                            <li><a href="https://paulbrs.github.io/Kinoafisha/">Kinoafisha</a></li>
+                            <li><a href="https://paulbrs.github.io/cookies/">Shop of cookies</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </article>
+            <div class="rss"></div>
+        </section>
+        
+        <section class="about-me">
+            <h1>Balaba Pavel</h1>
+            <h5>JUNIOR FRONT-END DEVELOPER</h5>
+            <div class="underlined-grey"></div>
+            <article class="education">
+                <h2>EDUCATION</h2>
+                <div class="description">
+                    <div class="description__item1">
+                        <div><span class="strong">01/2022 – 01/2026</span></div>
+                    </div>
+                    <div class="description__item2">
+                        <span class="strong">University:</span> Gomel State University named after F. Skaryna(Sophomore)
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="description__item1">
+                        <div><span class="strong">06/2021 – 08/2022</span></div>
+                        <div><span class="strong">Fructcode</span></div>
+                    </div>
+                    <div class="description__item2">
+                        <span class="strong">Course:</span> HTML/CSS Advanced
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="description__item1">
+                        <div><span class="strong">07/2022 – 07/2023</span></div>
+                        <div><span class="strong">Rolling Scopes School</span></div>
+                    </div>
+                    <div class="description__item2">
+                        <span class="strong">Course:</span> JS/FE Pre-School 2024Q2
+                    </div>
+                </div>
+            </article>
+            
+            <article class="EXAMPLES">
+                <h2>EXAMPLES</h2>
+                <!-- Пример кода для валидации формы -->
+                <pre class="code-block">
+                    <code>
+                    const product = document.getElementById("product");
+                    const name = document.getElementById("name");
+                    const phone = document.getElementById("phone");
+                    document.getElementById("order-action").onclick = function () {
+                        let hasError= false;
+                    
+                        [product, name, phone].forEach(item => {
+                            if(!item.value){
+                                item.style.borderColor = "red";
+                                hasError = true;
+                            } else {
+                                item.style.borderColor = "";
+                            }
+                        });
+                    
+                        if(!hasError){
+                            [product, name, phone].forEach(item => {
+                                item.value = "";
+                            });
+                            alert("Спасибо за заказ! Мы скоро свяжемся с вами!");
+                        }
+                    };
+                    // Код проверяет заполнение полей, выделяет незаполненные красной рамкой,
+                    // очищает поля при успешной отправке, и показывает сообщение об успешном заказе.
+                    </code>
+                </pre>
+            </article>
+            
+            <footer class="footer">
+                <nav class="footer__nav">
+                    <ul class="footer__nav__list">
+                        <li class="git-link">
+                            <a href="https://github.com/Paulbrs">
+                                <img alt="logo github" src="./images/gitHub.png">
+                            </a>
+                        </li>
+                        <li class="course-link">
+                            <a href="https://rs.school/courses/javascript-preschool-ru">
+                                <img src="./images/rs-school logo.png" alt="RS School logo">
+                            </a>
+                        </li>
+                        <li class="year">
+                            <span>2024</span>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
